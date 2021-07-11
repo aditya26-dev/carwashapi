@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from backendapp.models import Customer, Washer, Service, Package, Order, Rating
+from backendapp.models import Customer, Washer, Service, Package, Order, Rating, nilai, buku, berita, bantuan
 
 class customerSerializers(serializers.ModelSerializer):
 
