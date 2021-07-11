@@ -76,3 +76,48 @@ class Rating(models.Model):
 
     def __str__(self):
         return self.orderId
+
+class nilai(models.Model):
+
+
+    name = models.CharField(max_length=500)
+    matkul = models.IntegerField()
+    nilaimatkul = models.IntegerField()
+    gpa = models.IntegerField()
+    semester = models.IntegerField()
+
+    def __str__(self):
+        return self.name
+
+class buku(models.Model):
+
+
+    judul = models.CharField(max_length=500)
+    pengarang = models.CharField(max_length=500)
+    tahunrilis = models.IntegerField()
+    status = models.IntegerField()
+
+    def __str__(self):
+        return self.judul
+
+
+class bantuan(models.Model):
+
+
+    pertanyaan = models.CharField(max_length=1000)
+    jawaban = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.pertanyaan
+
+
+class berita(models.Model):
+
+
+    judul = models.CharField(max_length=1000)
+    deskripsi = models.CharField(max_length=1000)
+    rilis = models.CharField(max_length=1000)
+    kategori = models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.judul

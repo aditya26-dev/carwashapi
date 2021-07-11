@@ -25,4 +25,8 @@ urlpatterns = [
     path('package/', views.PackageList.as_view()),
     path('order/', views.OrderList.as_view()),
     path('rating/', views.RatingList.as_view()),
+    path('buku/', views.bukuList.as_view()),
+    path('bantuan/', views.bantuanList.as_view()),
+    path('nilai/', views.nilaiList.as_view()),
+    path('berita/', views.beritaList.as_view()),
 ]

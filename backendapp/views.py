@@ -68,3 +68,44 @@ class RatingList(APIView):
     
     def post(self):
         pass
+
+class bukuList(APIView):
+
+    def get(self, request):
+        rating = models.buku.objects.all()
+        serializer = serializers.bukuSerializers(rating, many=True)
+        return Response(serializer.data)
+    
+    def post(self):
+        pass
+
+class beritaList(APIView):
+
+    def get(self, request):
+        rating = models.berita.objects.all()
+        serializer = serializers.beritaSerializers(rating, many=True)
+        return Response(serializer.data)
+    
+    def post(self):
+        pass
+
+
+class bantuanList(APIView):
+
+    def get(self, request):
+        rating = models.bantuan.objects.all()
+        serializer = serializers.bantuanSerializers(rating, many=True)
+        return Response(serializer.data)
+    
+    def post(self):
+        pass
+
+class nilaiList(APIView):
+
+    def get(self, request):
+        rating = models.nilai.objects.all()
+        serializer = serializers.nilaiSerializers(rating, many=True)
+        return Response(serializer.data)
+    
+    def post(self):
+        pass

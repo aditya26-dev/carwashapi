@@ -36,3 +36,28 @@ class ratingSerializers(serializers.ModelSerializer):
     class Meta:
         model = Rating
         fields = '__all__'
+
+
+class nilaiSerializers(serializers.ModelSerializer):
+
+    class Meta:
+        model = nilai
+        fields = '__all__'
+
+class bukuSerializers(serializers.ModelSerializer):
+
+    class Meta:
+        model = buku
+        fields = '__all__'
+
+class beritaSerializers(serializers.ModelSerializer):
+
+    class Meta:
+        model = berita
+        fields = '__all__'
+
+class bantuanSerializers(serializers.ModelSerializer):
+
+    class Meta:
+        model = bantuan
+        fields = '__all__'
